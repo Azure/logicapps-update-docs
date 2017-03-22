@@ -1,0 +1,35 @@
+{
+  "name": "logicapps-update-docs",
+  "version": "1.0.0",
+  "description": "This repo is for storing [Logic Apps Update](https://aka.ms/logicappsupdate) posts to display in appropriate UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azure/logicapps-update-docs.git"
+  },
+  "keywords": [],
+  "author": "Microsoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azure/logicapps-update-docs/issues"
+  },
+  "homepage": "https://github.com/Azure/logicapps-update-docs#readme",
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "marked": "^0.3.6",
+    "normalize-css": "^2.3.1",
+    "office-ui-fabric-react": "^2.5.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "requirejs": "^2.3.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/marked": "0.0.28",
+    "@types/react": "^15.0.18",
+    "@types/react-dom": "^0.14.23"
+  }
+}
