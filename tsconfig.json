@@ -17,6 +17,9 @@
         "target": "es5"
     },
     "exclude": [
-        "node_modules/iconv-lite"
+        "node_modules"
+    ],
+    "include": [
+        "**/*"
     ]
 }

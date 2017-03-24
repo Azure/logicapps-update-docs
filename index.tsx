@@ -19,6 +19,10 @@ interface IPost {
     post: string;
 }
 
+const columns: IColumn[] = [
+    { fieldName: "markup", isMultiline: true, key: "markup", name: "markup", minWidth: 0 },
+];
+
 class Posts extends React.Component<IAppProps, Partial<IAppState>> {
     public static defaultProps: IAppProps = {
         locale: "en-US",
@@ -54,9 +58,6 @@ class Posts extends React.Component<IAppProps, Partial<IAppState>> {
         const { locale } = this.props;
         const { posts } = this.state;
         const keys = Object.keys(posts).sort().reverse();
-        const columns: IColumn[] = [
-            { fieldName: "markup", isMultiline: true, key: "markup", name: "markup", minWidth: 0 },
-        ];
         const groups: IGroup[] = keys.map((key, startIndex) => {
             const date = new Date(`${key}T12:00Z`);
             const name = date.toLocaleDateString(locale, { month: "long", day: "numeric", year: "numeric" });
