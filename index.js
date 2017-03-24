@@ -19,6 +19,9 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 define(["require", "exports", "@microsoft/load-themed-styles", "marked", "office-ui-fabric-react/lib/index", "react", "react-dom"], function (require, exports, load_themed_styles_1, marked, index_1, React, react_dom_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    var columns = [
+        { fieldName: "markup", isMultiline: true, key: "markup", name: "markup", minWidth: 0 },
+    ];
     var Posts = (function (_super) {
         __extends(Posts, _super);
         function Posts(props) {
@@ -53,9 +56,6 @@ define(["require", "exports", "@microsoft/load-themed-styles", "marked", "office
             var locale = this.props.locale;
             var posts = this.state.posts;
             var keys = Object.keys(posts).sort().reverse();
-            var columns = [
-                { fieldName: "markup", isMultiline: true, key: "markup", name: "markup", minWidth: 0 },
-            ];
             var groups = keys.map(function (key, startIndex) {
                 var date = new Date(key + "T12:00Z");
                 var name = date.toLocaleDateString(locale, { month: "long", day: "numeric", year: "numeric" });
