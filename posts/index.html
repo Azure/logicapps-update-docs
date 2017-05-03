@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Apps release notes</title>
+    <link rel="stylesheet" href="../node_modules/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/office-ui-fabric-react/dist/css/fabric.css">
+</head>
+<body>
+    <div id="posts"></div>
+    <script src="../node_modules/requirejs/require.js"></script>
+    <script>
+        requirejs.config({
+            baseUrl: '..',
+            packages: [
+                { name: "@microsoft/load-themed-styles", location: "./node_modules/@microsoft/load-themed-styles", main: "lib-amd/index" },
+                { name: "es6-promise/auto", location: "./node_modules/es6-promise", main: "dist/es6-promise.auto" },
+                { name: "marked", location: "./node_modules/marked", main: "lib/marked" },
+                { name: "react", location: "./node_modules/react", main: "dist/react" },
+                { name: "react-dom", location: "./node_modules/react-dom", main: "dist/react-dom" },
+                { name: "whatwg-fetch/auto", location: "./node_modules/whatwg-fetch", main: "fetch" }
+            ],
+            paths: {
+                "@uifabric/utilities/lib": "./node_modules/@uifabric/utilities/lib-amd",
+                "office-ui-fabric-react/lib": "./node_modules/office-ui-fabric-react/lib-amd",
+            }
+        })(["es6-promise/auto", "whatwg-fetch/auto", "./posts/index"]);
+    </script>
+</body>
+</html>
