@@ -18,18 +18,5 @@
   },
   "homepage": "https://github.com/Azure/logicapps-update-docs#readme",
   "dependencies": {
-    "es6-promise": "^4.1.0",
-    "marked": "^0.3.6",
-    "normalize-css": "^2.3.1",
-    "office-ui-fabric-react": "^2.24.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "requirejs": "^2.3.3",
-    "whatwg-fetch": "^2.0.3"
-  },
-  "devDependencies": {
-    "@types/marked": "0.0.28",
-    "@types/react": "^15.0.23",
-    "@types/react-dom": "^0.14.23"
   }
 }
